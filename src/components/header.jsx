@@ -22,9 +22,22 @@ const header = () => {
     </div>
 
     {/* Right Section Desktop */}
-    <nav>
-      <a href="#">
-        <i class='bx bx-user-circle'></i> Avatar
+    <nav className='hidden md:flex lg:gap-8 gap-4'>
+      <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-user-circle'></i> Avatar
+      </a>
+
+      <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-diamond'></i> Arena
+      </a>
+
+      <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bxs-chevrons-up'></i> Levels
+      </a>
+
+
+      <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-shopping-bag'></i> Shop
       </a>
     </nav>
 
