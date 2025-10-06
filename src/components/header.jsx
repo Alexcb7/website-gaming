@@ -41,7 +41,33 @@ const header = () => {
       </a>
     </nav>
 
+    { /* Mobile menu button - visible only on mobile */ }
 
+    <button className='text-3xl p-2 md:hidden'>
+      <i class='bx bx-menu'></i>
+    </button>
+
+    { /* Mobile menu - Hidden by default */ }
+  <div className='fixed top-14 right-0 left-0 bg-black p-5 md:hidden'>
+      <nav className='flex flex-col gap-4 items-center '>
+        <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-user-circle'></i> Avatar
+        </a>
+
+        <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-diamond'></i> Arena
+        </a>
+
+        <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bxs-chevrons-up'></i> Levels
+        </a>
+
+
+        <a href="#" className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-purple-400 after:left-0 after:bottom-0 after:transition-all hover:after:w-full text-nowrap">
+          <i class='bx bx-shopping-bag'></i> Shop
+        </a>
+      </nav>
+    </div>
     
   </header>
   )
