@@ -12,11 +12,18 @@ function Hero() {
         className="w-full h-full object-cover absolute top-0 first-letter:left-0 -z-10"
       ></video>
       
-      <div>
+      <div className='absolute bottom-[15%] flex flex-col items-center gap-5'>
         <img src='public\images\illu-text.png' alt='illu-text'
             className='md:w-[30rem] w-[20rem]'
-
         />
+
+        <h1 className='md:text:2xl text-1xl font-bold'>Explore, Capture, Conquer</h1>
+
+        <div className='md:w-[75%] w-[60%] h-[0.1px] bg-[#baba]'></div>
+
+        <button className="h-10 px-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg font-medium text-nowrap hover:opacity-70 transition-all duration-300">
+          PLAY NOW
+        </button>
         
       </div>
     </main>
